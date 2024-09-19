@@ -49,33 +49,6 @@ body {
     background-color: rgba(229, 229, 229, 0.386);
 }
 
-footer {
-    background-color: rgba(20, 20, 20, 0.89);
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.fo {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 20%;
-}
-
-.fo a {
-    text-decoration: none;
-    color: antiquewhite;
-    font-size: 1rem;
-}
-
-.whats,
-.insta,
-.email,
-.local {
-    height: 15%;
-}
-
 .grid-container-sobrenos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -209,4 +182,55 @@ footer {
     width: 60%;
     background-color: rgba(147, 150, 150, 0.216);
     text-align: center;
+}
+
+.rodape {
+    background-color: rgba(147, 150, 150);
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.rodape-container{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.social-icon{
+    width: 45px; 
+    height: auto; 
+    margin: 5px; 
+    transition: transform 0.3s ease; /* Efeito de transição para hover */
+}
+
+.social-icon:hover{
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .grid-container-sobrenos, 
+    .grid-sobrenos1,
+    .grid-sobrenos2,
+    .grid-sobrenos3,
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-bar, .ti{
+        display: none;
+    }
+
+    .rodape-section{
+        flex: 1 1 45%; 
+        text-align: center;
+    }
+
+
 }
