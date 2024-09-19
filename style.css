@@ -118,6 +118,10 @@ body {
     margin: auto;
 }
 
+.logo-rato{
+    height: 50%;
+}
+
 .ratoroi {
     height: auto;
     border-radius: 15px;
